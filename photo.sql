@@ -1,0 +1,7 @@
+CREATE TABLE photo (
+    photo_id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    account_id BIGINT NOT NULL,
+    photo_data LONGBLOB NOT NULL,
+    upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (account_id) REFERENCES account(account_id) ON DELETE CASCADE
+);
