@@ -7,6 +7,6 @@ CREATE TABLE job (
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,
     post_duration INT NOT NULL,
-    post_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIME,
+    post_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (organization_id) REFERENCES organization(organization_id) ON DELETE CASCADE
 );
