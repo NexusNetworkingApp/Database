@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Variables
-MYSQL_ROOT_PASSWORD="password"
-
 # Run SQL script inside the MySQL container
 mysql -u root -ppassword -h localhost < initialize.sql
 mysql -u root -ppassword -h localhost nexus_db < individual.sql
